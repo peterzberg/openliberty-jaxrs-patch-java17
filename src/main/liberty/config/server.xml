@@ -1,0 +1,18 @@
+<server>
+   <featureManager>
+      <!-- Java EE -->
+      <feature>jaxrs-2.1</feature>
+      <feature>cdi-2.0</feature>
+      <feature>appSecurity-2.0</feature>
+   </featureManager>
+
+
+   <mpMetrics authentication="false"/>
+
+   <httpEndpoint id="defaultHttpEndpoint" accessLoggingRef="accessLogging" httpPort="9080" httpsPort="9443"/>
+
+   <webApplication location="openliberty-jaxrs-patch-java17.war" context-root="/java17">
+   </webApplication>
+
+
+</server>
